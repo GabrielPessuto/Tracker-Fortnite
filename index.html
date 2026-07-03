@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fortnite User Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="bg-particles"></canvas>
+
+    <div class="app">
+        <header class="app-header">
+            <p class="eyebrow">HUD // Player Lookup</p>
+            <h1>Fortnite Tracker</h1>
+        </header>
+
+        <div class="search-bar">
+            <input type="text" id="username" placeholder="Nome de usuário">
+            <select id="platform">
+                <option value="pc">PC</option>
+                <option value="xbl">Xbox</option>
+                <option value="psn">PlayStation</option>
+                <option value="switch">Nintendo Switch</option>
+            </select>
+            <button id="searchBtn">Rastrear</button>
+        </div>
+
+        <div id="results"></div>
+    </div>
+
+    <script src="particles.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
